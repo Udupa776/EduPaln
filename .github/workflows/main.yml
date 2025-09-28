@@ -39,7 +39,7 @@ jobs:
 
       # 6️⃣ Optional: Upload build artifacts
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4   # <-- updated version
         with:
           name: frontend-build
           path: dist
