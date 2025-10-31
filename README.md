@@ -1,5 +1,5 @@
-# React + Vite
-<h1> Hello Every 🖐🖐<h1>
+
+# Hello Every 🖐🖐
 
 EduPlan
 
