@@ -1,0 +1,13 @@
+-- CREATE TABLE tests (
+--    id SERIaL PRIMARY KEY,
+--    name VARCHAR[100]
+
+-- )
+-- ALTER table tests
+-- ALTER COLUMN name type T
+
+ALTER TABLE testing
+ADD COLUMN id SERIAL PRIMARY Key,
+ADD COLUMN Uname TEXt,
+ADD COLUMN Umail TEXT,
+ADD COLUMN Pass TEXT

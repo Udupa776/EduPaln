@@ -1,0 +1,36 @@
+
+{
+  "title": "Beginner's Roadmap for Computer Science Engineering (CSE)",
+  "topics": [
+    {
+      "id": 1,
+      "name": "Introduction to Computers",
+      "description": "Learn what a computer is, its basic parts (CPU, Memory, Storage), and how they work together."
+    },
+    {
+      "id": 2,
+      "name": "Basic Programming Concepts",
+      "description": "Understand fundamental programming ideas like variables, data types, and simple instructions."
+    },
+    {
+      "id": 3,
+      "name": "Introduction to Algorithms",
+      "description": "Learn how to break down problems into small, logical steps (algorithms) to solve them."
+    },
+    {
+      "id": 4,
+      "name": "Introduction to Data Structures",
+      "description": "Discover ways to organize and store data efficiently, like lists and arrays."
+    },
+    {
+      "id": 5,
+      "name": "Computer Networks Basics",
+      "description": "Understand how computers communicate with each other over networks, like the internet."
+    },
+    {
+      "id": 6,
+      "name": "Introduction to Operating Systems",
+      "description": "Learn about the software that manages a computer's hardware and runs applications."
+    }
+  ]
+}

@@ -1,12 +1,24 @@
 # React + Vite
+<h1> Hello Every 🖐🖐<h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EduPlan
 
-Currently, two official plugins are available:
+📘 Overview
+This is a web application that predicts eligible colleges and branches based on entrance exam ranks like JEE, KCET, MHT-CET, COMEDK, etc. It helps students easily find suitable colleges and provides a roadmap for their chosen branch.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+Predicts colleges and branches based on exam rank.
+Supports JEE, KCET, MHT-CET, COMEDK, and others.
+Displays college cutoff data and branch details.
+Provides roadmap and prerequisites for each branch.
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+Frontend: HTML, CSS, JavaScript
+Backend: EPRESS Js
+Database: MySQL
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💻 Setup
+Clone the repository
+Install node 
+goto teminal and type npm run dev(starts front end) and in another terminal type npm start(starts backent server)
+Open http://localhost:5713 in Browser
