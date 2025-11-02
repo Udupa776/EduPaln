@@ -8,7 +8,7 @@ const { exec } = require('child_process');
 const bodyParser = require('body-parser');
 
 const ai=new googleapi.GoogleGenAI({
-  apiKey:"AIzaSyC6kJn_-f9Llo7d-31osJw3RslUleTt66E",
+  apiKey:"gemini AI API KEY ",
 })
 const localStorage = new LocalStorage("./scratch");;
 const app = express();
