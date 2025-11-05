@@ -73,43 +73,6 @@ catch(error)
 
 })
 
-app.get('/test/:brach',(req,res)=>{
-  const b=req.params.brach
-  console.log(b)
-  res.json({"response":{"stream":"AIML",
-    "roadmap":[{"main_topic":"Foundations of Artificial Intelligence",
-      "link":"https://www.coursera.org/learn/introduction-to-artificial-intelligence",
-      "subtopics":["Defining Artificial Intelligence: Core concepts and historical context",
-        "Types of AI: Narrow vs. General AI, Reactive vs. Limited Memory",
-        "Key AI Challenges: Problem-solving, knowledge representation, learning",
-        "Ethical Considerations in AI: Bias, fairness, transparency",
-        "Applications of AI: Real-world examples across industries"]},
-        {"main_topic":"Introduction to Machine Learning",
-          "link":"https://www.coursera.org/learn/machine-learning",
-          "subtopics":["What is Machine Learning? Supervised, Unsupervised, and Reinforcement Learning",
-            "Types of Machine Learning Problems: Regression, Classification, Clustering","Data Preprocessing: Handling missing values, feature scaling, encoding",
-            "Model Training and Evaluation: Train-test split, accuracy, precision, recall",
-            "Common ML Algorithms: Linear Regression, Logistic Regression, K-Nearest Neighbors"]},
-            {"main_topic":"Deep Learning Fundamentals",
-              "link":"https://www.deeplearning.ai/",
-              "subtopics":["Introduction to Neural Networks: Neurons, layers, activation functions","Feedforward Neural Networks: Architecture and forward propagation",
-                "Backpropagation Algorithm: Understanding gradient descent and weight updates",
-                "Convolutional Neural Networks (CNNs): For image processing",
-                "Recurrent Neural Networks (RNNs): For sequential data"]},
-                {"main_topic":"Python for AIML","link":"https://www.python.org/",
-                  "subtopics":["Python Basics: Variables, data types, control flow",
-                    "Data Structures in Python: Lists, dictionaries, tuples",
-                    "NumPy for Numerical Computing: Arrays, vectorization",
-                    "Pandas for Data Manipulation: DataFrames, series, data cleaning",
-                    "Matplotlib/Seaborn for Data Visualization: Plotting basic charts"]},
-                    {"main_topic":"Natural Language Processing (NLP) Basics",
-                      "link":"https://www.nltk.org/book/",
-                      "subtopics":["Introduction to NLP: Understanding human language for computers",
-                        "Text Preprocessing: Tokenization, stemming, lemmatization",
-                        "Text Representation: Bag-of-Words, TF-IDF",
-                        "Basic NLP Tasks: Sentiment analysis, text classification",
-                        "Introduction to NLP Libraries: NLTK, spaCy"]}]}}
-)})
 
 app.post('/predict', (req, res) => {
   const select =req.body.select; 
@@ -133,7 +96,7 @@ const pool = new Pool({
   port: 5432,
   user: "postgres",
   database: "postgres",
-  password: "Supabase@321", // put your Supabase password
+  password: "Supabase password here", 
   ssl: { rejectUnauthorized: false }
 });
 
@@ -167,13 +130,6 @@ app.post("/getuser",async(req,res)=>{
       res.json({"error":true,"description":"Password is incorrect"});
 })
 
-app.get("/test/:nme",async(req,res)=>
-{
-  let n=req.params.nme;
-  console.log(n)
-  let result=await pool.query("SELECT pass FROM testing WHERE uname=$1 ",[n])
-   let match=await bcrypt.compare("qazwsxedc",result.rows[0]["pass"])
-  res.json({"result is":match});
-})
+
 
 app.listen(5000);
